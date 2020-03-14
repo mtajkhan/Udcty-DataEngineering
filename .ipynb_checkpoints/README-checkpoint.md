@@ -24,13 +24,9 @@ Currently, Sparkify don't have an easy way to query their data, which resides in
 <b>Dim Tables</b>
 <ul>
     <li><b>tb_user:</b> App users</li>
-
     <li><b>tb_song:</b> Available songs in the app</li>
-
     <li><b>tb_artist:</b>Details of artists of the songs</li>
-    
     <li><b>tb_time:</b> tb_songplay start time broken down into various time units</li>
-    
 </ul>
 
 <b>Fact Tables</b>
