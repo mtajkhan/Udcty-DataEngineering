@@ -8,20 +8,19 @@ time_table_drop = "DROP TABLE IF EXISTS tb_time"
 
 # CREATE TABLES
 
-songplay_table_create = ("""CREATE TABLE IF NOT EXISTS tb_songplay (songplay_id SERIAL PRIMARY KEY,start_time TIMESTAMP,user_id INTEGER,level VARCHAR,song_id VARCHAR,artist_id VARCHAR,session_id INTEGER,location VARCHAR, user_agent VARCHAR);""")
+songplay_table_create = ("""CREATE TABLE IF NOT EXISTS tb_songplay (start_time TIMESTAMP,user_id INTEGER,level VARCHAR,song_id VARCHAR,artist_id VARCHAR,session_id INTEGER,location VARCHAR, user_agent VARCHAR);""")
 
 user_table_create = ("""CREATE TABLE IF NOT EXISTS tb_user (userId VARCHAR, firstName VARCHAR, lastName VARCHAR, gender VARCHAR, level VARCHAR);""")
 
-song_table_create = ("""CREATE TABLE IF NOT EXISTS tb_song (song_id VARCHAR PRIMARY KEY,title VARCHAR,artist_id VARCHAR, year INT, duration FLOAT);""")
+song_table_create = ("""CREATE TABLE IF NOT EXISTS tb_song (song_id VARCHAR,title VARCHAR,artist_id VARCHAR, year INT, duration FLOAT);""")
 
-artist_table_create = ("""CREATE TABLE IF NOT EXISTS tb_artist (artist_id VARCHAR PRIMARY KEY, artist_name VARCHAR, artist_location VARCHAR, artist_latitude VARCHAR,  artist_longitude VARCHAR);""")
+artist_table_create = ("""CREATE TABLE IF NOT EXISTS tb_artist (artist_id VARCHAR, artist_name VARCHAR, artist_location VARCHAR, artist_latitude VARCHAR,  artist_longitude VARCHAR);""")
 
-time_table_create = ("""CREATE TABLE IF NOT EXISTS tb_time (start_time TIMESTAMP PRIMARY KEY,hour INT,day INT, weekofyear INT, month INT,year INT,weekday INT);""")
+time_table_create = ("""CREATE TABLE IF NOT EXISTS tb_time (start_time TIMESTAMP,hour INT,day INT, weekofyear INT, month INT,year INT,weekday INT);""")
 
 # INSERT RECORDS
 
-songplay_table_insert = ("""INSERT INTO tb_songplay (songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent)
-VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)""")
+songplay_table_insert = ("""INSERT INTO tb_songplay (start_time, user_id, level, song_id, artist_id, session_id, location, user_agent) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)""")
 
 user_table_insert = ("""INSERT INTO tb_user (userId, firstName, lastName, gender, level) VALUES (%s, %s, %s, %s, %s)""")
 

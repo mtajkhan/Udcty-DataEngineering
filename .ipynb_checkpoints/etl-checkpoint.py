@@ -38,7 +38,7 @@ def process_log_file(cur, filepath):
         cur.execute(time_table_insert, list(row))
 
     # load user table
-    user_df = 
+    user_df = df[['userId','firstName','lastName','gender','level']]
 
     # insert user records
     for i, row in user_df.iterrows():
@@ -57,7 +57,7 @@ def process_log_file(cur, filepath):
             songid, artistid = None, None
 
         # insert songplay record
-        songplay_data = 
+        songplay_data = (row.ts, row.userId, row.level, songid, artistid, row.sessionId,row.location, row.userAgent)
         cur.execute(songplay_table_insert, songplay_data)
 
 
