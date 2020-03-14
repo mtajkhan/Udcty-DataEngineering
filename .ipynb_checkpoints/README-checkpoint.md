@@ -13,6 +13,6 @@ Currently, Sparkify don't have an easy way to query their data, which resides in
 <b>Design</b>
 
 <ul>
-<li>Define fact and dimension tables for a star schema for a particular analytic focus<\li>
-<li>Build an ETL pipeline using Python that transfers data from files in two local directories into these tables in Postgres using Python and SQL<\li>
+<li>Define fact and dimension tables for a star schema for a particular analytic focus</li>
+<li>Build an ETL pipeline using Python that transfers data from files in two local directories into these tables in Postgres using Python and SQL</li>
 </ul>
