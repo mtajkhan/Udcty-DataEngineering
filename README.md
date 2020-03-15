@@ -28,7 +28,8 @@ Currently, Sparkify don't have an easy way to query their data, which resides in
 * **tb_time:** tb_songplay start time broken down into various time units
 
 **Fact Tables**
-    * **tb_songplay:** Details of songs played via app 
+
+* **tb_songplay:** Details of songs played via app 
 
 ### Project Design
 
