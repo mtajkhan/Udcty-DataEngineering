@@ -24,7 +24,7 @@ Currently, Sparkify don't have an easy way to query their data, which resides in
 
 * **tb_user:** App users
 * **tb_song:** Available songs in the app
-* **tb_artist:**Details of artists of the songs
+* **tb_artist:** Details of artists of the songs
 * **tb_time:** tb_songplay start time broken down into various time units
 
 **Fact Tables**
@@ -47,6 +47,6 @@ The Database Design is carried out with star schema structure keeping in mind th
 
 * **create_tables.py:** Drops and creates your tables. You run this file to reset your tables before each time you run your ETL scripts
 * **sql_queries.py:** Contains all your sql queries, and is imported into create_tables.py, etl.ipynb, etl.py 
-* **etl.ipynb:**Reads and processes a single file from song_data and log_data and loads the data into your tables. This notebook contains detailed instructions on the ETL process for each of the tables.
+* **etl.ipynb:** Reads and processes a single file from song_data and log_data and loads the data into your tables. This notebook contains detailed instructions on the ETL process for each of the tables.
 * **etl.py:** Reads and processes files from song_data and log_data and loads them into your tables. You can fill this out based on your work in the ETL notebook
-* **test.ipynb:**Displays the first few rows of each table to let you check your database
+* **test.ipynb:** Displays the first few rows of each table to let you check your database
